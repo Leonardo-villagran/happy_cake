@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.imagen_pastel{
+  max-width: 10%;
+  max-height: 10%;
+}
