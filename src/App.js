@@ -17,9 +17,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Contacto" element={<Contacto />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/happy_cake" element={<Home />} />
+          <Route path="/happy_cake/Contacto" element={<Contacto />} />
+          <Route path="/happy_cake/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       <div className='p-2 text-center'>
