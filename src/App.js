@@ -9,12 +9,13 @@ import Navbar from "./components/Navbar";
 function App() {
 
   //Definición de constantes de títulos 
+  //<BrowserRouter basename='/happy_cake'>
   const nombreFooter = "@Leonardo-Villagrán" ;
   const emailFooter ="mailto:leonardovillagran@yahoo.com";
   
   return (
     <div className="App">
-      <BrowserRouter basename='/happy_cake'>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
