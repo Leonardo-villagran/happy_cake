@@ -14,12 +14,12 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/happy_cake'>
         <Navbar />
         <Routes>
-          <Route path="/happy_cake" element={<Home />} />
-          <Route path="/happy_cake/Contacto" element={<Contacto />} />
-          <Route path="/happy_cake/*" element={<NotFound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Contacto" element={<Contacto />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       <div className='p-2 text-center'>
