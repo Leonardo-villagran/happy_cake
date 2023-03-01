@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 
+//Vista de datos de error de ruta
 const NotFound = () => {
   return (
     <Container className="pt-5">

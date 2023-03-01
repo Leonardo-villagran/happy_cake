@@ -1,5 +1,6 @@
 import Badge from 'react-bootstrap/Badge';
 
+//Vista de datos del footer
 const Footer = () => {
     
     const nombreFooter = "@Leonardo-Villagrán" ;

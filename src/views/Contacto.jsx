@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import Contact from "../components/Contact";
 
+//Vista de datos de contacto
 const Contacto = () => {
   return (
     <Container className="pt-5">

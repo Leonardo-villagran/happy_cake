@@ -3,13 +3,15 @@ import Alert from 'react-bootstrap/Alert';
 
 export default function Navigation() {
 
+  //Definición de estados
+
   const [email, setEmail] = useState("");
   const [descripcion, setDescripcion] = useState("");
   const [mostrar, setMostrar] = useState(false);
   const [alertType, setAlertType] = useState("success");
   const [alertMessage, setAlertMessage] = useState("");
 
-  //Función para capturar los datos desde el input de nombre
+  //Función para capturar los datos desde el input de descripción
   const capturaDescripcion = (e) => {
     setDescripcion(e.target.value)
   }
@@ -18,6 +20,7 @@ export default function Navigation() {
     setEmail(e.target.value)
   }
 
+  //Función para activar el botón para el caso que los dos inputs tengan datos. 
   const activarBoton = () => {
     if (email !== "" && descripcion !== "") {
       return (
@@ -40,9 +43,9 @@ export default function Navigation() {
   const enviarFormulario = (e) => {
     e.preventDefault()
 
-    //En caso de que el nombre y el email estén vacíos no almacenar
+    //En caso de que el email y la descripción estén vacíos no almacenar
     if (email === "" || descripcion === "") {
-      //console.log(nombreTarea, emailTarea);
+  
       setMostrar(true)
       setAlertType("danger");
       setAlertMessage("No dejar espacios en blanco.");
@@ -62,8 +65,6 @@ export default function Navigation() {
       return true;
     }
   }
-
-
 
 
   return (

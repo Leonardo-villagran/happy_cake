@@ -1,6 +1,7 @@
 import image_pastel from "../assets/img/pastel_01.png";
 import { Container } from "react-bootstrap";
 
+//Vista de datos del home
 const Home = () => {
   return (
     <Container className="text-center">
